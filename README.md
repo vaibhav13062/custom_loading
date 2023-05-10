@@ -1,39 +1,55 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# custom_loading
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+custom_loading is a Flutter package that provides an easy way to display customizable loading screens in your Flutter applications. It allows you to create visually appealing loading screens that match your app's design and provide a seamless user experience during data fetching or processing operations.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Display a customizable loading screen with various options for customization.
+- Easily integrate the loading screen into your existing Flutter applications.
+- Customize the appearance of the loading screen to match your app's design.
+- Smoothly transition between the loading screen and your app's content.
+
+## Installation
+
+To use `custom_loading` in your Flutter project, add it as a dependency in your `pubspec.yaml` file:
+
+dependencies:
+  custom_loading: ^1.0.0
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Import the custom_loading package in your Dart file:
+
+```dart
+import 'package:custom_loading/custom_loading.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+
+Use CustomLoadingScaffold widget instead of Scaffold at top most widget of your screen also provide a loader widget and isLoading.
 
 ```dart
-const like = 'sample';
+CustomLoadingScaffold(
+isLoading: true, // BOOLEAN
+blurIntensity: 2.0, //BACKGROUND BLUR INTENSITY
+loaderWidget: Container(), // ADD CUSTOM LOADING WIDGET HERE
+body:Container(), // ADD BODY HERE NORMALLY 
+);
 ```
+
+Also you can use all the parameters of Scaffold.
+
+## Example
+
+Check out the `example` directory in the GitHub repository for a complete example showcasing the usage of the custom_loading package.
+
+## Contributing
+Contributions to custom_loading are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Made by :- Vaibhav Chandolia
+Email:- chandolia.vaibhav@gmail.com
+Website:- vaibhavchandolia.info
