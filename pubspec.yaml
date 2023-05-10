@@ -1,6 +1,6 @@
 name: custom_loading
 description: custom_loading is a Flutter package that allows you to easily display customizable loading screens in your Flutter applications. You can create visually appealing loading screens that match your app's design and provide a seamless user experience during data fetching or processing operations
-version: 0.0.1
+version: 1.0.0
 homepage: https://vaibhavchandolia.info
 repository: https://github.com/vaibhav13062/custom_loading
 
