@@ -1,11 +1,11 @@
 name: custom_loading
 description: Introducing custom_loading A Flutter package for seamless loading screens. Easily customize and integrate loading animations into your app.
-version: 1.0.2
+version: 1.0.3
 homepage: https://vaibhavchandolia.info
 repository: https://github.com/vaibhav13062/custom_loading
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=2.17.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

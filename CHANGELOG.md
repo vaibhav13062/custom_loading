@@ -1,3 +1,3 @@
-## 1.0.2
+## 1.0.3
 
-* Bugs Fixes.
+* Added Lower Dart Version Support
