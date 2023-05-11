@@ -4,9 +4,10 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class CustomLoadingScaffold extends StatelessWidget {
-  final bool isLoading;
-  final Widget loaderWidget;
-  final double blurIntensity;
+  // USE THIS WIDGET INSTEAD FO YOUR REGULAR SCAFFOLD FOR A BETTER LOADING
+  final bool isLoading; // DETERMINES WEATHER SCREEN IS LOADING OR NOT
+  final Widget loaderWidget; // WIDGET THAT WILL BE VISIBLE WHEN LOADING
+  final double blurIntensity; // USED TO CONTROL BLUR INTENSITY
 
   final PreferredSizeWidget? appBar;
   final Widget? body;
@@ -35,9 +36,9 @@ class CustomLoadingScaffold extends StatelessWidget {
 
   const CustomLoadingScaffold({
     Key? key,
-    required this.isLoading,
-    required this.loaderWidget,
-    this.blurIntensity = 3.0,
+    required this.isLoading, // DETERMINES WEATHER SCREEN IS LOADING OR NOT
+    required this.loaderWidget, // WIDGET THAT WILL BE VISIBLE WHEN LOADING
+    this.blurIntensity = 3.0, // USED TO CONTROL BLUR INTENSITY
     this.appBar,
     this.body,
     this.floatingActionButton,
@@ -101,7 +102,8 @@ class CustomLoadingScaffold extends StatelessWidget {
         Visibility(
           visible: isLoading,
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: blurIntensity, sigmaY: blurIntensity),
+            filter:
+                ImageFilter.blur(sigmaX: blurIntensity, sigmaY: blurIntensity),
             child: Container(),
           ),
         ),

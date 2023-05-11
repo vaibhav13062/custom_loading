@@ -51,6 +51,6 @@ Contributions to custom_loading are welcome! If you encounter any issues or have
 
 ## Additional information
 
-Made by :- Vaibhav Chandolia
-Email:- chandolia.vaibhav@gmail.com
-Website:- vaibhavchandolia.info
+- Made by :- Vaibhav Chandolia
+- Email:- chandolia.vaibhav@gmail.com
+- Website:- vaibhavchandolia.info
